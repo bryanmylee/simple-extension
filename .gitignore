@@ -1,0 +1,13 @@
+# Editor artifacts
+.vscode/
+.vim/
+
+# macOS artifacts
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+public/build/
+public/manifest.json

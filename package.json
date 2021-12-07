@@ -1,0 +1,37 @@
+{
+  "name": "simple-extension",
+  "description": "A simple cross-browser extension",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:manifest": "node manifest.js",
+    "build:package": "rollup -c",
+    "build": "run-p build:manifest build:package",
+    "dev:package": "rollup -c -w",
+    "dev": "run-s build:manifest dev:package",
+    "start": "sirv public --no-clear",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-typescript": "^8.0.0",
+    "@tsconfig/svelte": "^2.0.0",
+    "@types/webextension-polyfill": "^0.8.2",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-check": "^2.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0",
+    "webextension-polyfill": "^0.8.0"
+  },
+  "dependencies": {
+    "sirv-cli": "^1.0.0"
+  }
+}
