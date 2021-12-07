@@ -1,3 +1,3 @@
 # Simple extension
 
-A simple extension with the main goal of being cross-browser compatible.
+A simple cross-browser extension with Svelte as the popup controller.
