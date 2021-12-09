@@ -43,6 +43,6 @@ const manifest = {
 
 fs.writeFile(
   __dirname + "/public/manifest.json",
-  JSON.stringify(manifest),
+  JSON.stringify(manifest, null, "\t"),
   () => {}
 );
