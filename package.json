@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "gen:safari": "xcrun safari-web-extension-converter --project-location ./safari public",
     "build:manifest": "node manifest.js",
     "build:package": "rollup -c",
     "build": "run-p build:manifest build:package",

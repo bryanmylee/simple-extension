@@ -16,4 +16,6 @@ Go to `about:debugging#/runtime/this-firefox`, and load `./public/manifest.json`
 
 Launch Safari, and enable `Develop > Allow Unsigned Extensions`.
 
-Open the `./safari/` project in Xcode and build the application. Then, run the application and enable the extension in Safari preferences.
+Build the project, then run `npm run gen:safari`.
+
+Open the generated `./safari/` project in Xcode and build the application. Then, run the application and enable the extension in Safari preferences.

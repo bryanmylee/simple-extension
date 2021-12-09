@@ -11,3 +11,4 @@ node_modules/
 # Build artifacts
 public/build/
 public/manifest.json
+safari/
